@@ -8,7 +8,7 @@ namespace OverwatchStandings.Models
         public int Id { get; set; }
         public DateTime MatchDate { get; set; }
         public ScoreLine Score { get; set; }
-        public Team Home { get; }
+        public Team Home { get; set; }
         public Team Away { get; set; }
         public List<Game> GameList { get; set; }
         public int Stage { get; set; }
