@@ -8,13 +8,6 @@
         public Team Home { get; set; }
         public Team Away { get; set; }
 
-        public Team Winner
-        {
-            get
-            {
-                if (Score.HomeScore > Score.AwayScore) return Home;
-                return Away;
-            }
-        }
+        public Team Winner => Score.HomeScore > Score.AwayScore ? Home : Away;
     }
 }

@@ -12,5 +12,7 @@ namespace OverwatchStandings.Models
         public Team Away { get; set; }
         public List<Game> GameList { get; set; }
         public int Stage { get; set; }
+
+        public Team Winner => Score.HomeScore > Score.AwayScore ? Home : Away;
     }
 }
